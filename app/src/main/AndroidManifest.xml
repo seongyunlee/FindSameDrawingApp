@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FindSameDrawing">
         <activity
+            android:name=".HowtoPlayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RankingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GameActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
