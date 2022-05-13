@@ -43,6 +43,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="20dp"
             android:text="gameStart"
+            android:onClick="onGameStartBtnClicked"
             android:id="@+id/btn_gameStart"
             />
         <Button
@@ -53,6 +54,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:id="@+id/btn_goToRanking"
+            android:onClick="onGoToRankingBtnClicked"
             android:text="Rank"/>
         <Button
             android:layout_width="wrap_content"
@@ -61,6 +63,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:text="게임 설명"
+            android:onClick="onGotoInfoBtnClicked"
             android:id="@+id/btn_goToInfo"
             android:layout_marginTop="20dp"
             />
