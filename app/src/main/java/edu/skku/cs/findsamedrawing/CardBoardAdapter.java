@@ -17,6 +17,11 @@ public class CardBoardAdapter extends BaseAdapter {
     CardBoardAdapter(){
         cardInfo.add(new Card(0,0));
         cardInfo.add(new Card(0,0));
+        cardInfo.add(new Card(0,0));
+        cardInfo.add(new Card(0,0));
+        cardInfo.add(new Card(0,0));
+        cardInfo.add(new Card(0,0));
+        cardInfo.add(new Card(0,0));
 
     }
 
