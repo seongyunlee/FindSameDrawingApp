@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding= DataBindingUtil.setContentView(this, R.layout.activity_main);
         binding.executePendingBindings();
+        skipLogin();
     }
     public void onGameStartBtnClicked(View v){
         goToGameActivity();
@@ -27,6 +28,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public void onGotoInfoBtnClicked(View v){
         goToHowtoPlayActivity();
+    }
+    private void skipLogin(){
+        Intent intent = new Intent(MainActivity.this,GameActivity.class);
+        startActivity(intent);
     }
     private void goToGameActivity(){
         String username = binding.etUsername.getText().toString();
