@@ -12,17 +12,11 @@ import edu.skku.cs.findsamedrawing.Model.Card;
 
 public class CardBoardAdapter extends BaseAdapter {
     ArrayList<Card> cardInfo = new ArrayList<>();
+    GameViewModel viewModel;
     Context context;
 
-    CardBoardAdapter(){
-        cardInfo.add(new Card(0,0));
-        cardInfo.add(new Card(0,0));
-        cardInfo.add(new Card(0,0));
-        cardInfo.add(new Card(0,0));
-        cardInfo.add(new Card(0,0));
-        cardInfo.add(new Card(0,0));
-        cardInfo.add(new Card(0,0));
-
+    CardBoardAdapter(GameViewModel viewModel){
+        this.viewModel = viewModel;
     }
 
     @Override

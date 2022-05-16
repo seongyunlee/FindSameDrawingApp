@@ -1,8 +1,9 @@
 package edu.skku.cs.findsamedrawing.Model;
 
 public class Card {
-    int color;
-    int type;
+    int color;// 0~4
+    int type; //0~3
+    int state;//0 for covered
 
     public int getColor() {
         return color;
@@ -20,8 +21,9 @@ public class Card {
         this.type = type;
     }
 
-    public Card(int color, int type) {
+    public Card(int color, int type,int state) {
         this.color = color;
         this.type = type;
+        this.state =state;
     }
 }

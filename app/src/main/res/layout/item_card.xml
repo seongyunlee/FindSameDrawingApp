@@ -11,8 +11,8 @@
     <Button
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:background="@drawable/ic_blue_timeglass"
-        android:backgroundTint="@color/purple_200"
+        android:background="@color/purple_200"
+        android:backgroundTint="@color/teal_700"
         android:scaleType="center"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
