@@ -6,6 +6,7 @@
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.109" />
         <entry key="app/src/main/res/drawable/ic_blue_arrow_plus.xml" value="0.109" />
         <entry key="app/src/main/res/drawable/ic_blue_timeglass.xml" value="0.109" />
+        <entry key="app/src/main/res/drawable/ic_glass.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.109" />
         <entry key="app/src/main/res/layout/activity_game.xml" value="0.23449713392391872" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.23449713392391872" />

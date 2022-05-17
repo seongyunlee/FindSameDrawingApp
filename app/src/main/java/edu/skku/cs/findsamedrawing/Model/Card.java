@@ -2,7 +2,16 @@ package edu.skku.cs.findsamedrawing.Model;
 
 public class Card {
     int color;// 0~4
-    int type; //0~3
+    int type; //0~1
+
+    public int getState() {
+        return state;
+    }
+
+    public void setState(int state) {
+        this.state = state;
+    }
+
     int state;//0 for covered
 
     public int getColor() {
@@ -25,5 +34,11 @@ public class Card {
         this.color = color;
         this.type = type;
         this.state =state;
+    }
+    public boolean isSameCard(Card card){
+        if(color==card.getColor() && type==card.getType()){
+            return true;
+        }
+        else return false;
     }
 }
