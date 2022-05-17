@@ -35,7 +35,7 @@ public class GameViewModel extends ViewModel {
             new_cards.add(new Card(i%5,i/5,0));
             new_cards.add(new Card(i%5,i/5,0));
         }
-        //Collections.shuffle(new_cards);
+        Collections.shuffle(new_cards);
         _cards.setValue(new_cards);
     }
     private void GameStart(){
