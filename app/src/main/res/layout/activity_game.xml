@@ -24,16 +24,15 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
+        <Chronometer
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toTopOf="@id/gv_cardBoard"
             app:layout_constraintStart_toStartOf="@id/gv_cardBoard"
             app:layout_constraintEnd_toEndOf="@id/gv_cardBoard"
             android:layout_marginBottom="8dp"
-            android:text="Time TV"
             android:textSize="15sp"
-            android:id="@+id/tv_elapsedTime"
+            android:id="@+id/cm_clock"
             />
         <TextView
             android:layout_width="wrap_content"
