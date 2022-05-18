@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding= DataBindingUtil.setContentView(this, R.layout.activity_main);
         binding.executePendingBindings();
-        skipLogin();
     }
     public void onGameStartBtnClicked(View v){
         goToGameActivity();
