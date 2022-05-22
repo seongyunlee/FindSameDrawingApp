@@ -24,15 +24,23 @@ public class RankingActivity extends AppCompatActivity {
         binding = DataBindingUtil.setContentView(this,R.layout.activity_ranking);
         binding.executePendingBindings();
         viewModel = new ViewModelProvider(this).get(RankingViewModel.class);
+        setRankingView();
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        viewModel.getRecords();
+    }
+
     private void setRankingView(){
-        RankingAdapter adapter = new RankingAdapter();
+        RankingAdapter adapter = new RankingAdapter(viewModel);
         binding.rvRank.setAdapter(adapter);
         binding.rvRank.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         viewModel.records.observe(this, new Observer<ArrayList<Record>>() {
             @Override
             public void onChanged(ArrayList<Record> records) {
-
+                adapter.setRecords(records);
             }
         });
     }

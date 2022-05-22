@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FindSameDrawing</string>
+    <string name="game_desc">같은 그림을 찾는 게임입니다.\n1.start를 눌러 시작합니다.\n2.카드 하나를 터치하여 뒤집고 다른 하나를 터치하여 하여 뒤집습니다 3.카드가 같으면 다시 다른 카드를 뒤집습니다.\n4.카드가 다르면 다른 카드를 터치하면 열린 카드가 다시 뒤집어집니다.\n 빠른 시간 안에 게임dmf 클리어하세요.</string>
 </resources>

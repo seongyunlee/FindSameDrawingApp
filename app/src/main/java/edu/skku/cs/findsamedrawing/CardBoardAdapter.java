@@ -78,10 +78,9 @@ public class CardBoardAdapter extends BaseAdapter {
 
         return view;
     }
-    public void setCardInfo(ArrayList<Card> cards){
-        cardInfo= cards;
-        Log.d("card changed",Integer.toString(cardInfo.size()));
+    public void setCardInfo(ArrayList<Card> cards) {
+        cardInfo = cards;
+        Log.d("card changed", Integer.toString(cardInfo.size()));
         notifyDataSetChanged();
     }
-
 }

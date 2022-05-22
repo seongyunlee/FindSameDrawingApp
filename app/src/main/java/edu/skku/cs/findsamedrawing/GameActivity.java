@@ -36,7 +36,7 @@ public class GameActivity extends AppCompatActivity {
         binding = DataBindingUtil.setContentView(this,R.layout.activity_game);
         binding.executePendingBindings();
         Intent intent = getIntent();
-        username = intent.getStringExtra("name");
+        username = intent.getStringExtra("username");
         viewModel = new ViewModelProvider(this).get(GameViewModel.class);
         binding.setViewModel(viewModel);
         setCardBoard();

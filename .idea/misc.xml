@@ -10,9 +10,11 @@
         <entry key="app/src/main/res/drawable/ic_glass.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.109" />
         <entry key="app/src/main/res/layout/activity_game.xml" value="0.23449713392391872" />
+        <entry key="app/src/main/res/layout/activity_howto_play.xml" value="0.26506024096385544" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.23449713392391872" />
         <entry key="app/src/main/res/layout/activity_ranking.xml" value="0.28637627432808155" />
         <entry key="app/src/main/res/layout/item_card.xml" value="0.234375" />
+        <entry key="app/src/main/res/layout/item_record.xml" value="0.4847549438476566" />
       </map>
     </option>
   </component>

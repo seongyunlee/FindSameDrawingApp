@@ -12,7 +12,7 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 
 public class ConnectionUtil {
-    final String URL = "https://p3o0i3ipc0.execute-api.ap-northeast-2.amazonaws.com/dev/";
+    final String URL = "https://q6gqmlbtv3.execute-api.ap-northeast-2.amazonaws.com/dev/";
     OkHttpClient client = new OkHttpClient();
 
 
@@ -20,6 +20,7 @@ public class ConnectionUtil {
         client.newCall(req).enqueue(callback);
     }
     public void addRecord(String username,String time,Callback callback){
+        Log.d("Request call",username+" "+time);
         Record model = new Record(username,time);
         Gson gson = new Gson();
         String json = gson.toJson(model,Record.class);
@@ -27,6 +28,7 @@ public class ConnectionUtil {
         sendQuery(req,callback);
     }
     public void getRecord(Callback callback){
+        Log.d("Request call","get record");
         Request req = new Request.Builder().url(URL+"getrecord").build();
         sendQuery(req,callback);
     }
